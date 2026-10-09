@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="静态工程常识小测。选题、提交，当场看判定和解析。答案键在 quiz.json。"
+    />
+    <title>代码复习小测</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%239d2c2c'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site-header">
+        <p class="eyebrow">Review Quiz</p>
+        <h1>代码复习小测</h1>
+        <p class="lede">
+          几道工程常识题。选出一项并提交，当场看判定和解析。不需要账号，也不连接后端。
+        </p>
+        <p class="score" id="score" aria-live="polite">正在读取 quiz.json</p>
+      </header>
+      <main id="app">
+        <p class="status">正在读取题目…</p>
+      </main>
+      <footer class="site-footer">
+        <p>判分只对照 <code>quiz.json</code> 里的 <code>answer</code>。答案不会上传。</p>
+      </footer>
+    </div>
+    <noscript>
+      <p class="noscript">需要启用 JavaScript 才能读取题目并判分。页面本身仍是静态文件。</p>
+    </noscript>
+    <script src="quiz.js"></script>
+  </body>
+</html>

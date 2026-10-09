@@ -1,0 +1,65 @@
+{
+  "title": "代码复习小测",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "在 Git 里，哪条命令会新建一个分支并立刻切换过去？",
+      "options": [
+        { "key": "A", "text": "git status" },
+        { "key": "B", "text": "git checkout -b feature" },
+        { "key": "C", "text": "git log --oneline" },
+        { "key": "D", "text": "git push" }
+      ],
+      "answer": "B",
+      "explanation": "`git checkout -b`（以及 `git switch -c`）会创建分支并切到该分支。`git status` 只显示工作区状态，不会建分支。"
+    },
+    {
+      "id": "q2",
+      "question": "HTTP 状态码里，哪一个表示请求成功？",
+      "options": [
+        { "key": "A", "text": "404 Not Found（未找到）" },
+        { "key": "B", "text": "500 Internal Server Error（服务器错误）" },
+        { "key": "C", "text": "200 OK（成功）" },
+        { "key": "D", "text": "301 Moved Permanently（永久重定向）" }
+      ],
+      "answer": "A",
+      "explanation": "200 OK 表示请求成功。404 表示资源不存在，500 表示服务器内部错误，301 表示永久重定向。"
+    },
+    {
+      "id": "q3",
+      "question": "下面哪一种是 JavaScript 的严格相等比较？",
+      "options": [
+        { "key": "A", "text": "单个等号 =（赋值）" },
+        { "key": "B", "text": "两个等号 ==（会转换类型）" },
+        { "key": "C", "text": "三个等号 ===（不转换类型）" },
+        { "key": "D", "text": "不等于 !=" }
+      ],
+      "answer": "C",
+      "explanation": "`===` 同时比较值和类型，不做类型转换。`=` 是赋值，`==` 会先转换类型再比较。"
+    },
+    {
+      "id": "q4",
+      "question": "CSS 盒模型里，哪一个是边框外侧的空白？",
+      "options": [
+        { "key": "A", "text": "padding（内边距）" },
+        { "key": "B", "text": "border（边框）" },
+        { "key": "C", "text": "margin（外边距）" },
+        { "key": "D", "text": "content（内容）" }
+      ],
+      "answer": "C",
+      "explanation": "`margin` 在边框外面，用来拉开元素和周围内容的距离。`padding` 在内容与边框之间。"
+    },
+    {
+      "id": "q5",
+      "question": "哪一个 HTTP 方法通常用来读取资源，并且不应当修改服务器上的数据？",
+      "options": [
+        { "key": "A", "text": "POST" },
+        { "key": "B", "text": "GET" },
+        { "key": "C", "text": "DELETE" },
+        { "key": "D", "text": "PATCH" }
+      ],
+      "answer": "B",
+      "explanation": "GET 用来读取资源，约定上是安全的、只读的。POST、PATCH、DELETE 会创建、修改或删除数据。"
+    }
+  ]
+}
